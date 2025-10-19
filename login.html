@@ -621,10 +621,14 @@
       });
     </script>
     <script>
-      function onSignIn(googleUser) {
-        document.location.href =
-          "https://rcstream.vercel.app/home.html";
-      }
-    </script>
+  function onSignIn(googleUser) {
+    // Pesan ini akan muncul di console browser jika fungsi berjalan
+    console.log("Fungsi onSignIn berhasil dipanggil!");
+    console.log("Mencoba redirect ke home.html...");
+
+    // Menggunakan window.location.href untuk redirect
+    window.location.href = "https://rcstream.vercel.app/home.html";
+  }
+</script>
   </body>
 </html>
